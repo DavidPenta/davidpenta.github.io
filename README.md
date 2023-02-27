@@ -1,3 +1,2 @@
 # davidpenta.github.io
-
-ahoj
+# ahoj
