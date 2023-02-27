@@ -1,2 +1,2 @@
-# davidpenta.github.io
+# davidpenta.github.io .
 # ahoj
