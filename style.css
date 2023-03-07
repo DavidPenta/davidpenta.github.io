@@ -1,0 +1,30 @@
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #4bb748;
+    border-color: #4bb748;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #FFFFFF;
+    background-color: #348032;
+    border-color: #348032;
+}
+
+.btn-delete {
+    color: #FFFFFF;
+    background-color: #ed0000;
+    border-color: #ed0000;
+}
+.btn-delete:hover, .btn-delete:focus, .btn-delete:active, .btn-delete.active, .open>.dropdown-toggle.btn-delete {
+    color: #FFFFFF;
+    background-color: #ed0000;
+    border-color: #ed0000;
+}
+
+.left-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
