@@ -43,6 +43,9 @@ table tr td:last-child {
     width: 1px;
     text-align: right;
 }
-.nounderline {
-    text-decoration: none !important
+
+tr {
+    line-height: 30px;
+    min-height: 30px;
+    height: 30px;
 }
