@@ -5,8 +5,8 @@
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #FFFFFF;
-    background-color: #348032;
-    border-color: #348032;
+    background-color: #348032 !important;
+    border-color: #348032 !important;
 }
 
 .btn-delete {
@@ -16,8 +16,8 @@
 }
 .btn-delete:hover, .btn-delete:focus, .btn-delete:active, .btn-delete.active, .open>.dropdown-toggle.btn-delete {
     color: #FFFFFF;
-    background-color: #ed0000;
-    border-color: #ed0000;
+    background-color: #cc0000 !important;
+    border-color: #cc0000 !important;
 }
 
 .left-arrow {
@@ -27,4 +27,22 @@
     padding: 3px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+table tr td:last-child {
+    white-space: nowrap;
+    width: 1px;
+}
+
+table tr td:last-child {
+    text-align: right;
+}
+
+.narrow-column {
+    white-space: nowrap;
+    width: 1px;
+    text-align: right;
+}
+.nounderline {
+    text-decoration: none !important
 }
