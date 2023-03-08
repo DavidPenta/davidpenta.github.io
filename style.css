@@ -49,3 +49,10 @@ tr {
     min-height: 40px;
     height: 40px;
 }
+
+.img-logo {
+    height: 100%;
+    display: inline-block;
+    max-width: 220px;
+    vertical-align: bottom;
+}
