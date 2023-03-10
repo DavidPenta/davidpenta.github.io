@@ -1,0 +1,23 @@
+body{
+    background-color: #FCF5C6 !important;
+}
+.sidebar {
+    width: 0;
+    z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.1s;
+    position: absolute;
+    top: 77px;
+    bottom: 200px;
+}
+
+.btn-warning:hover{
+    color: #000000;
+    background-color: #d9a302 !important;
+    border-color: #d9a302 !important;
+}
+
+footer{
+    height: 200px;
+}
