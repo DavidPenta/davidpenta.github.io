@@ -1,5 +1,5 @@
 body{
-    background-color: #FCF5C6 !important;
+    background-color: #fce6a1 !important;
 }
 .sidebar {
     width: 0;
@@ -20,4 +20,14 @@ body{
 
 footer{
     height: 200px;
+}
+
+.rounded {
+    border-radius: 2rem !important;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
 }

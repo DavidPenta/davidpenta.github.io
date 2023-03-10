@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,14 +10,14 @@
 <body class="d-flex flex-column min-vh-100">
 <header class="p-3 bg-white text-bg-light w-100">
   <div class="container w-100">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mb-md-0 w-100"><button type="button" id="sidebarCollapse" class="align-items-left justify-content-left bi btn me-4" onclick="toggleNav()"><img src="images/sidebar.svg" width="40" height="32" alt="Menu" /></button><a href="/" class="d-flex mb-lg-0 text-black text-decoration-none me-lg-auto mb-2 justify-content-center mb-md-0"><img src="images/logo.svg" class="bi me-2" width="40" height="32" alt="LOGO" /><span class="fs-4">Nazov</span></a>
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mb-md-0 w-100"><button type="button" id="sidebarCollapse" class="align-items-left justify-content-left bi btn me-4" onclick="toggleNav()"><img src="images/sidebar.svg" width="40" height="32" alt="Menu" /></button><a href="index.html" class="d-flex mb-lg-0 text-black text-decoration-none me-lg-auto mb-2 justify-content-center mb-md-0"><img src="images/logo.svg" class="bi me-2" width="40" height="32" alt="LOGO" /><span class="fs-4">Nazov</span></a>
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-25 ms-5" role="search"><input type="search" class="form-control form-control-dark text-bg-white " placeholder="Hľadať podľa názvu, autora..." aria-label="Search"></form>
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mb-md-0 text-end"><a href="#"><button type="button" class="btn btn-outline-dark me-2 ">Prihlásiť sa</button></a><a href="#"><button type="button" class="btn btn-warning me-4">Registrovať sa</button></a><a href="#" class="d-flex mb-lg-0 text-black text-decoration-none mb-2 justify-content-center mb-md-0"><img src="images/basket.svg" class="bi me-2" width="40" height="32" alt="basket" /></a></div>
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mb-md-0 text-end"><a href="log-in.html"><button type="button" class="btn btn-outline-dark me-2 ">Prihlásiť sa</button></a><a href="registration.html"><button type="button" class="btn btn-warning me-4">Registrovať sa</button></a><a href="#" class="d-flex mb-lg-0 text-black text-decoration-none mb-2 justify-content-center mb-md-0"><img src="images/basket.svg" class="bi me-2" width="40" height="32" alt="basket" /></a></div>
     </div>
   </div>
 </header>
 <div class="container">
-  <div id="sidebar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white sidebar" style="width: 0px"><a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"><span class="fs-5 fw-semibold">Kategórie</span></a>
+  <div id="sidebar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white sidebar" style="width: 0"><a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"><span class="fs-5 fw-semibold">Kategórie</span></a>
     <div class="list-group list-group-flush border-bottom scrollarea"><a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
       <div class="col-10 mb-1 small">Bestsellery</div>
     </a><a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
@@ -52,8 +52,50 @@
       <div class="col-10 mb-1 small">Náučná a odborná literatúra</div>
     </a></div>
   </div>
-  <div class="container align-middle pt-5 bg-white shadow-sm rounded mt-5">
-
+  <div class="container align-middle align-middle">
+    <div class="container align-middle pt-4 bg-white shadow-sm rounded mt-5 pb-3">
+      <h3 class="text-center pb-5">Registrácia</h3>
+      <form class="row g-3">
+      <div class="row">
+        <div class="col">
+          <label class="ps-3" for="name">Meno*</label><input id=name type="text" class="form-control">
+        </div>
+        <div class="col">
+          <label class="ps-3" for="surname">Priezvisko*</label><input id="surname" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col">
+          <label class="ps-3" for="email">Email*</label><input id=email type="text" class="form-control">
+        </div>
+        <div class="col">
+          <label class="ps-3" for="phone">Telefónne číslo</label><input id="phone" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col">
+          <label class="ps-3" for="street">Ulica a číslo</label><input id="street" type="text" class="form-control">
+        </div>
+        <div class="col">
+          <label class="ps-3" for="city">Mesto</label><input id=city type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row pt-4 pb-2 w-50">
+        <div class="col">
+          <label class="ps-3" for="postcode">PSČ</label><input id="postcode" type="text" class="form-control">
+        </div>
+      </div>
+        <div class="row pt-5 pb-4">
+          <div class="col">
+            <label class="ps-3" for="password">Heslo*</label><input id="password" type="text" class="form-control">
+          </div>
+          <div class="col">
+            <label class="ps-3" for="password_2">Heslo znovu*</label><input id="password_2" type="text" class="form-control">
+          </div>
+        </div>
+      </form>
+    </div>
+    <button type="button" class="btn btn-success btn-xl mt-4 mb-5 rounded float-end me-5" id="register">Registrovať sa</button>
   </div>
 </div>
 
