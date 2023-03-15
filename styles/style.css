@@ -31,3 +31,44 @@ footer{
     font-size: 20px;
     border-radius: 10px;
 }
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+.image-mp{
+    background-color: black;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.image-bs{
+    background-color: black;
+    max-width: 100px;
+    max-height: 150px;
+}
+
+.buy-part{
+    bottom: 0;
+}
+
+#book-image {
+    width: 600px;
+    height: 800px;
+}
+
+.offset-left {
+    padding-left: 30px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.offset-right {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
