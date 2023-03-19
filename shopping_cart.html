@@ -16,7 +16,7 @@
     </div>
   </div>
 </header>
-<div class="container">
+<div class="container mb-5">
   <div id="sidebar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white sidebar" style="width: 0"><a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"><span class="fs-5 fw-semibold">Kategórie</span></a>
     <div class="list-group list-group-flush border-bottom scrollarea"><a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
       <div class="col-10 mb-1 small">Bestsellery</div>
@@ -52,15 +52,79 @@
       <div class="col-10 mb-1 small">Náučná a odborná literatúra</div>
     </a></div>
   </div>
-  <div class="container align-middle w-50 align-middle">
-    <div class="container align-middle pt-4 bg-white shadow-sm rounded mt-5 pb-5">
-      <h3 class="text-center pb-4">Zabudnuté heslo</h3>
-      <p class="text-center pb-3">Ak ste zabudli heslo, odkaz na jeho obnovu vám zašleme na váš e-mail:</p>
-      <form class="container">
-        <fieldset class="form-group"><label class="text-center pb-2 ps-3" for="email">Email</label><input type="text" class="form-control" id="email" value=""></fieldset>
-      </form>
+  <div class="container align-middle">
+    <div class="container align-middle pt-4 bg-white shadow-sm rounded mt-5 mb-3 pb-3">
+      <h3 class="text-center pb-3">Nákupný košík</h3>
+
+      <div class="row bg-light rounded m-2 p-2">
+        <div class="col-3 col-xl-1 col-md-2 d-flex flex-wrap align-items-center m-0">
+          <img src="images/princ.jpg" class="img-fluid">
+        </div>
+        <div class="col-5 col-xl-7 col-md-6">
+          <h4>Malý princ</h4>
+          <h6>Antoine de Saint-Exupéry</h6>
+          <input type="number" min="1" step="1" class="form-control" id="amountInput" placeholder="1" style="width: 65px;">
+        </div>
+        <div class="col float-end d-flex align-items-center text-end justify-content-end">
+            <div class="col-1 mt-2 me-2">
+              <h5>5€</h5>
+            </div>
+            <div class="col-1 pb-1 ms-2">
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row bg-light rounded m-2 p-2">
+        <div class="col-3 col-xl-1 col-md-2 d-flex flex-wrap align-items-center m-0">
+          <img src="images/princ.jpg" class="img-fluid">
+        </div>
+        <div class="col-5 col-xl-7 col-md-6">
+          <h4>Malý princ</h4>
+          <h6>Antoine de Saint-Exupéry</h6>
+          <input type="number" min="1" step="1" class="form-control" id="amountInput" placeholder="1" style="width: 65px;">
+        </div>
+        <div class="col float-end d-flex align-items-center text-end justify-content-end">
+            <div class="col-1 mt-2 me-2">
+              <h5>5€</h5>
+            </div>
+            <div class="col-1 pb-1 ms-2">
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row bg-light rounded m-2 p-2">
+        <div class="col-3 col-xl-1 col-md-2 d-flex flex-wrap align-items-center m-0">
+          <img src="images/princ.jpg" class="img-fluid">
+        </div>
+        <div class="col-5 col-xl-7 col-md-6">
+          <h4>Malý princ</h4>
+          <h6>Antoine de Saint-Exupéry</h6>
+          <input type="number" min="1" step="1" class="form-control" id="amountInput" placeholder="1" style="width: 65px;">
+        </div>
+        <div class="col float-end d-flex align-items-center text-end justify-content-end">
+            <div class="col-1 mt-2 me-2">
+              <h5>5€</h5>
+            </div>
+            <div class="col-1 pb-1 ms-2">
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+      </div>
+    
+      <div class="row m-2 mt-4">
+        <h3 class="text-end">Celková suma : 23,99€</h3>
+      </div>
     </div>
-    <button type="button" class="btn btn-success w-100 mt-4 mb-5 rounded" id="button1">Obnoviť heslo</button>
+    <div class="d-grid gap-2 d-md-block">
+      <div class="d-flex justify-content-center justify-content-md-start mt-1 ms-4 me-4 float-start">
+        <a href="index.html" class="btn btn-outline-success btn-xl rounded text-nowrap" role="button" style="width: 250px;">Pokračovať v nákupe</a>
+      </div>
+      <div class="d-flex justify-content-center justify-content-md-end mt-1 ms-4 me-4 float-end">
+        <a href="order.html" class="btn btn-success btn-xl rounded text-nowrap" role="button" style="width: 250px;">Objednať</a>
+      </div>
+    </div>
   </div>
 </div>
 
