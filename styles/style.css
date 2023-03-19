@@ -57,11 +57,8 @@ h3 {
 }
 
 #book-image {
-    width: 200px;
-}
-
-#book-image-large {
-    width: 400px;
+    width: 600px;
+    height: 800px;
 }
 
 .offset-left {

@@ -24,40 +24,11 @@ const categoryTitleMapping =
     "education": "Náučná a odborná literatúra"
 }
 
-function setCategoryTitle(categoryName)
-{
-    var categoryTitleElement = document.getElementById("category-title");
-    categoryTitleElement.innerHTML = categoryTitleMapping[categoryName] ?? "Neznáma kategória";
-}
-
-function setCategoryPage(pageNumber, categoryName)
-{
-    const maxPage = 20;
-    for (let i = 0; i < 5; i++)
-    {
-        var pageNumberPosition = i - 2;
-        if ((Number(pageNumber) + Number(pageNumberPosition) > 0) && (Number(pageNumber) + Number(pageNumberPosition) <= maxPage))
-        {
-            var pageNumberElement = document.getElementById("page-label-" + i);
-            pageNumberElement.innerHTML = (Number(pageNumber) + Number(pageNumberPosition));
-
-            var pageAnchorElement = document.getElementById("page-anchor-" + i);
-            pageAnchorElement.hidden = false;
-            pageAnchorElement.href = "category.html?category=" + categoryName + "&page=" + (Number(pageNumber) + Number(pageNumberPosition));
-        }
-        else
-        {
-            var pageAnchorElement = document.getElementById("page-anchor-" + i);
-            pageAnchorElement.hidden = true;
-        }
-    }
-}
-
-function setCategoryTitleAndPage()
+function setCategoryTitle()
 {
     const url = new URL(window.location.toString());
+    console.log(url);
     const categoryName = url.searchParams.get("category");
-    const pageNumber = url.searchParams.get("page");
-    setCategoryTitle(categoryName);
-    setCategoryPage(pageNumber, categoryName);
+    var categoryTitleElement = document.getElementById("category-title");
+    categoryTitleElement.innerHTML = categoryTitleMapping[categoryName] ?? "Neznáma kategória";
 }
