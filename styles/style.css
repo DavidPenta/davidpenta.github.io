@@ -9,7 +9,7 @@ body{
     transition: 0.1s;
     position: absolute;
     top: 77px;
-    bottom: 200px;
+    /*bottom: 200px;*/
 }
 
 .btn-warning:hover{
@@ -74,4 +74,20 @@ h3 {
     display: inline-block;
     text-align: right;
     width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .log-in-container {
+        width: 100% !important;
+    }
+    .nav-btn{
+        width: 100% !important;
+    }
+    #myNavbar{
+        flex-grow: 3 !important;
+    }
+}
+
+.navbar {
+    width: 100% !important;
 }
