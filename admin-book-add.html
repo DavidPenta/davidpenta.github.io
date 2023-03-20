@@ -53,13 +53,10 @@
     </a></div>
   </div>
   <div class="row">
-    <div class="col-4 ps-4">
+    <div class="col-6 ps-4">
       <a href="admin-book-add.html"><button type="button" class="btn btn-light btn-xl mt-4 rounded" id="pridanie" >Pridanie knihy</button></a>
     </div>
-    <div class="col-4">
-      <form role="search"><input type="search" class=" mt-4 btn-light  form-control rounded-pill py-3 pr-4 mr-2" placeholder="Hľadať podľa názvu, autora..." aria-label="Search"></form>
-    </div>
-    <div class="col-4">
+    <div class="col-6">
       <a href="admin-book-edit-list.html"><button type="button" class="btn btn-light btn-xl mt-4 rounded float-end me-2" id="upravenie" >Upravenie knihy</button></a>
     </div>
   </div>
@@ -77,7 +74,25 @@
         </div>
         <div class="row pt-4">
           <div class="col ps-5">
-            <label class="ps-3" for="kategoria">Kategória</label><input id="kategoria" type="text" class="form-control">
+            <label class="ps-3" for="kategoria">Kategória</label>
+            <select class="form-control" id="kategoria">
+              <option>Bestsellery</option>
+              <option>Novinky</option>
+              <option>Young Adult</option>
+              <option>Romantika</option>
+              <option>Krimi a detektívky</option>
+              <option>Trilery</option>
+              <option>Dobrodružne</option>
+              <option>Rodina</option>
+              <option>Fantasy</option>
+              <option>Sci-fi</option>
+              <option>Romány a novely</option>
+              <option>Biografie</option>
+              <option>Poézia</option>
+              <option>Životný štýl</option>
+              <option>Deti a mládež</option>
+              <option>Náučná a odborná literatúra</option>
+            </select>
           </div>
           <div class="col">
             <label class="ps-3" for="cena">Cena</label><input id="cena" type="text" class="form-control">
