@@ -66,7 +66,7 @@ h3 {
 
 .offset-left {
     padding-left: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: left;
 }
 
@@ -74,4 +74,42 @@ h3 {
     display: inline-block;
     text-align: right;
     width: 100%;
+}
+
+.dropdown {
+    position: static !important;
+}
+
+.dropdown-btn{
+    background-color: #fafafa; !important;
+    color: #fafafa; !important;
+    border-color: #fafafa; !important;
+}
+
+.dropdown:active {
+    color: #000000; !important;
+}
+
+.dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    margin-top:-2px !important;
+    width:100% !important;
+}
+
+@media only screen and (max-width: 650px) {
+    .log-in-container {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-btn{
+        width: 100% !important;
+    }
+    .myNavbar{
+        flex-grow: 3 !important;
+    }
+    .nav-right{
+        width: 100%;
+    }
 }
