@@ -1,24 +1,14 @@
-body{
+body {
     background-color: #fce6a1 !important;
 }
-.sidebar {
-    width: 0;
-    z-index: 1;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.1s;
-    position: absolute;
-    top: 77px;
-    bottom: 200px;
-}
 
-.btn-warning:hover{
+.btn-warning:hover {
     color: #000000;
     background-color: #d9a302 !important;
     border-color: #d9a302 !important;
 }
 
-footer{
+footer {
     height: 200px;
 }
 
@@ -32,29 +22,6 @@ footer{
     border-radius: 10px;
 }
 
-h2 {
-    text-align: left;
-}
-
-h3 {
-    text-align: center;
-}
-
-.image-mp{
-    background-color: black;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-.image-bs{
-    background-color: black;
-    max-width: 100px;
-    max-height: 150px;
-}
-
-.buy-part{
-    bottom: 0;
-}
 
 #book-image {
     width: 200px;
@@ -80,36 +47,34 @@ h3 {
     position: static !important;
 }
 
-.dropdown-btn{
-    background-color: #fafafa; !important;
-    color: #fafafa; !important;
-    border-color: #fafafa; !important;
+.dropdown-btn {
+    background-color: #fafafa;
+    color: #fafafa;
+    border-color: #fafafa;
 }
 
 .dropdown:active {
-    color: #000000; !important;
+    color: #000000;
 }
 
 .dropdown-menu {
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
-    margin-top:-2px !important;
-    width:100% !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    margin-top: -2px !important;
+    width: 100%;
 }
 
 @media only screen and (max-width: 650px) {
-    .log-in-container {
+    .container-expanding {
         width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .nav-btn{
+    .nav-btn {
         width: 100% !important;
     }
-    .myNavbar{
-        flex-grow: 3 !important;
-    }
-    .nav-right{
+
+    .nav-right {
         width: 100%;
     }
 }

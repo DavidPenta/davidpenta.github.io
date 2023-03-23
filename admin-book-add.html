@@ -1,152 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kníhkupectvo Knihomoľ</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script type='text/javascript' src='scripts/script.js'></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Kníhkupectvo Knihomoľ</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
 <nav class="navbar navbar-expand-md bg-light p-3 w-100">
-  <div class="container">
-    <div class="d-flex flex-md-grow-1 nav-left">
-      <div class="d-flex dropdown">
-        <button class="btn dropdown-btn me-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="images/sidebar.svg" width="40" height="32" alt="Menu" />
-        </button>
-        <ul class="list-inline mx-auto justify-content-center text-center dropdown-menu">
-          <li><a class="dropdown-item" href="category.html?category=bestseller&page=1">Bestsellery</a></li>
-          <li><a class="dropdown-item" href="category.html?category=news&page=1">Novinky</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="category.html?category=youngadult&page=1">Young Adult</a></li>
-          <li><a class="dropdown-item" href="category.html?category=romance&page=1">Romantika</a></li>
-          <li><a class="dropdown-item" href="category.html?category=crime&page=1">Krimi a detektívky</a></li>
-          <li><a class="dropdown-item" href="category.html?category=thriller&page=1">Trilery</a></li>
-          <li><a class="dropdown-item" href="category.html?category=adventure&page=1">Dobrodružne</a></li>
-          <li><a class="dropdown-item" href="category.html?category=family&page=1">Rodina</a></li>
-          <li><a class="dropdown-item" href="category.html?category=fantasy&page=1">Fantasy</a></li>
-          <li><a class="dropdown-item" href="category.html?category=scifi&page=1">Sci-fi</a></li>
-          <li><a class="dropdown-item" href="category.html?category=novels&page=1">Romány a novely</a></li>
-          <li><a class="dropdown-item" href="category.html?category=biography&page=1">Biografie</a></li>
-          <li><a class="dropdown-item" href="category.html?category=poetry&page=1">Poézia</a></li>
-          <li><a class="dropdown-item" href="category.html?category=lifestyle&page=1">Životný štýl</a></li>
-          <li><a class="dropdown-item" href="category.html?category=children&page=1">Deti a mládež</a></li>
-          <li><a class="dropdown-item" href="category.html?category=education&page=1">Náučná a odborná literatúra</a></li>
-        </ul>
-      </div>
-      <div class="text-center">
-        <ul class="navbar-nav">
-          <li>
-            <div class="text-lg-right text-center">
-              <a href="index.html" class="text-black text-decoration-none">
-                <img class="d-none d-lg-block" src="images/logo-large.svg" width="330" height="48" alt="LOGO"/>
-                <div class="text-center">
-                  <img class="d-lg-none" src="images/logo-small.svg" width="165" height="48" alt="LOGO" />
-                </div>
-
-              </a>
+    <div class="container">
+        <div class="d-flex flex-md-grow-1 nav-left">
+            <div class="d-flex dropdown">
+                <button class="btn dropdown-btn me-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    <img src="images/sidebar.svg" width="40" height="32" alt="Menu"/>
+                </button>
+                <ul class="list-inline mx-auto justify-content-center text-center dropdown-menu">
+                    <li><a class="dropdown-item" href="category.html?category=bestseller&page=1">Bestsellery</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=news&page=1">Novinky</a></li>
+                    <li>
+                        <hr class="dropdown-divider"/>
+                    </li>
+                    <li><a class="dropdown-item" href="category.html?category=youngadult&page=1">Young Adult</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=romance&page=1">Romantika</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=crime&page=1">Krimi a detektívky</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=thriller&page=1">Trilery</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=adventure&page=1">Dobrodružne</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=family&page=1">Rodina</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=fantasy&page=1">Fantasy</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=scifi&page=1">Sci-fi</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=novels&page=1">Romány a novely</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=biography&page=1">Biografie</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=poetry&page=1">Poézia</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=lifestyle&page=1">Životný štýl</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=children&page=1">Deti a mládež</a></li>
+                    <li><a class="dropdown-item" href="category.html?category=education&page=1">Náučná a odborná
+                        literatúra</a></li>
+                </ul>
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="text-center">
+                <ul class="navbar-nav">
+                    <li>
+                        <div class="text-lg-right text-center">
+                            <a href="index.html" class="text-black text-decoration-none">
+                                <img class="d-none d-lg-block" src="images/logo-large.svg" width="330" height="48"
+                                     alt="LOGO"/>
+                                <div class="text-center">
+                                    <img class="d-lg-none" src="images/logo-small.svg" width="165" height="48"
+                                         alt="LOGO"/>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-right nav-right pt-2">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-2 me-2 pt-1">
+                    <form role="search">
+                        <input type="search" class="align-bottom form-control form-control-dark text-bg-white"
+                               placeholder="Hľadať podľa názvu, autora..." aria-label="Search"/>
+                    </form>
+                </li>
+                <li class="nav-item ms-2 me-2 pt-1">
+                    <a href="log-in.html">
+                        <button type="button" class="btn btn-outline-dark me-2 nav-btn">Prihlásiť</button>
+                    </a>
+                </li>
+                <li class="nav-item ms-2 pt-1 me-2 mb-3">
+                    <a href="registration.html">
+                        <button type="button" class="btn btn-warning me-2 nav-btn">Registrovať</button>
+                    </a>
+                </li>
+                <li class="nav-item ms-2 me-2 pt-2">
+                    <a href="shopping-cart.html"
+                       class="d-flex text-black text-decoration-none mb-2 justify-content-center mb-md-0"><img
+                            src="images/basket.svg" class="bi me-2" width="40" height="32" alt="basket"/></a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="text-right nav-right pt-2">
-      <ul class="navbar-nav">
-        <li class="nav-item ms-2 me-2 pt-1">
-          <form role="search">
-            <input type="search" class="align-bottom form-control form-control-dark text-bg-white" placeholder="Hľadať podľa názvu, autora..." aria-label="Search"></form>
-        </li>
-        <li class="nav-item ms-2 me-2 pt-1">
-          <a href="log-in.html"><button type="button" class="btn btn-outline-dark me-2 nav-btn">Prihlásiť</button></a>
-        </li>
-        <li class="nav-item ms-2 pt-1 me-2 mb-3">
-          <a href="registration.html"><button type="button" class="btn btn-warning me-2 nav-btn">Registrovať</button></a>
-        </li>
-        <li class="nav-item ms-2 me-2 pt-2">
-          <a href="shopping-cart.html" class="d-flex text-black text-decoration-none mb-2 justify-content-center mb-md-0"><img src="images/basket.svg" class="bi me-2" width="40" height="32" alt="basket" /></a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col-6 ps-4">
-      <a href="admin-book-add.html"><button type="button" class="btn btn-light btn-xl mt-4 rounded" id="pridanie" >Pridanie knihy</button></a>
+    <div class="row">
+        <div class="col-6 ps-4">
+            <a href="admin-book-add.html">
+                <button type="button" class="btn btn-light btn-xl mt-4 rounded" id="pridanie">Pridanie knihy</button>
+            </a>
+        </div>
+        <div class="col-6">
+            <a href="admin-book-edit-list.html">
+                <button type="button" class="btn btn-light btn-xl mt-4 rounded float-end me-2" id="upravenie">Upravenie
+                    knihy
+                </button>
+            </a>
+        </div>
     </div>
-    <div class="col-6">
-      <a href="admin-book-edit-list.html"><button type="button" class="btn btn-light btn-xl mt-4 rounded float-end me-2" id="upravenie" >Upravenie knihy</button></a>
+    <div class="container align-middle align-middle">
+        <div class="container align-middle pt-4 bg-white shadow-sm rounded mt-4 pb-3">
+            <h3 class="text-center pb-5">Pridanie knihy</h3>
+            <form class="row g-3">
+                <div class="row">
+                    <div class="col ps-5"><label class="ps-3" for="nazov">Názov knihy</label><input id="nazov"
+                                                                                                    type="text"
+                                                                                                    class="form-control"/>
+                    </div>
+                    <div class="col"><label class="ps-3" for="autor">Autor</label><input id="autor" type="text"
+                                                                                         class="form-control"/></div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col ps-5">
+                        <label class="ps-3" for="kategoria">Kategória</label>
+                        <select class="form-control" id="kategoria">
+                            <option>Bestsellery</option>
+                            <option>Novinky</option>
+                            <option>Young Adult</option>
+                            <option>Romantika</option>
+                            <option>Krimi a detektívky</option>
+                            <option>Trilery</option>
+                            <option>Dobrodružne</option>
+                            <option>Rodina</option>
+                            <option>Fantasy</option>
+                            <option>Sci-fi</option>
+                            <option>Romány a novely</option>
+                            <option>Biografie</option>
+                            <option>Poézia</option>
+                            <option>Životný štýl</option>
+                            <option>Deti a mládež</option>
+                            <option>Náučná a odborná literatúra</option>
+                        </select>
+                    </div>
+                    <div class="col"><label class="ps-3" for="cena">Cena</label><input id="cena" type="text"
+                                                                                       class="form-control"/></div>
+                </div>
+                <div class=""></div>
+                <div class="row pt-4">
+                    <div class="col ps-5"><label class="ps-3" for="datum">Dátum vydania</label><input id="datum"
+                                                                                                      type="text"
+                                                                                                      class="form-control"/>
+                    </div>
+                    <div class="col"><label for="obrazok1">Obrázok č. 1</label><input type="file" class="form-control"
+                                                                                      id="obrazok1"/></div>
+                </div>
+                <div class="row pt-4 pb-5">
+                    <div class="col ps-5"><label class="ps-3" for="popis">popis knihy</label><textarea id="popis"
+                                                                                                       class="form-control"
+                                                                                                       rows="5"></textarea>
+                    </div>
+                    <div class="col"><label for="obrazok1">Obrázok č. 2</label><input type="file" class="form-control"
+                                                                                      id="obrazok2"/></div>
+                </div>
+            </form>
+        </div>
+        <button type="button" class="btn btn-success btn-xl mt-4 mb-5 rounded float-end me-5" id="pridat">Pridať knihu
+        </button>
     </div>
-  </div>
-  <div class="container align-middle align-middle">
-    <div class="container align-middle pt-4 bg-white shadow-sm rounded mt-4 pb-3">
-      <h3 class="text-center pb-5">Pridanie knihy</h3>
-      <form class="row g-3">
-        <div class="row">
-          <div class="col ps-5">
-            <label class="ps-3" for="nazov">Názov knihy</label><input id="nazov" type="text" class="form-control">
-          </div>
-          <div class="col">
-            <label class="ps-3" for="autor">Autor</label><input id="autor" type="text" class="form-control">
-          </div>
-        </div>
-        <div class="row pt-4">
-          <div class="col ps-5">
-            <label class="ps-3" for="kategoria">Kategória</label>
-            <select class="form-control" id="kategoria">
-              <option>Bestsellery</option>
-              <option>Novinky</option>
-              <option>Young Adult</option>
-              <option>Romantika</option>
-              <option>Krimi a detektívky</option>
-              <option>Trilery</option>
-              <option>Dobrodružne</option>
-              <option>Rodina</option>
-              <option>Fantasy</option>
-              <option>Sci-fi</option>
-              <option>Romány a novely</option>
-              <option>Biografie</option>
-              <option>Poézia</option>
-              <option>Životný štýl</option>
-              <option>Deti a mládež</option>
-              <option>Náučná a odborná literatúra</option>
-            </select>
-          </div>
-          <div class="col">
-            <label class="ps-3" for="cena">Cena</label><input id="cena" type="text" class="form-control">
-          </div>
-        </div>
-        <div class=""></div>
-        <div class="row pt-4">
-          <div class="col ps-5">
-            <label class="ps-3" for="datum">Dátum vydania</label><input id="datum" type="text" class="form-control">
-          </div>
-          <div class="col">
-            <label for="obrazok1">Obrázok č. 1</label><input type="file" class="form-control" id="obrazok1">
-          </div>
-        </div>
-        <div class="row pt-4 pb-5">
-          <div class="col ps-5">
-            <label class="ps-3" for="popis">popis knihy</label><textarea id="popis" class="form-control" rows="5"></textarea>
-          </div>
-          <div class="col">
-            <label for="obrazok1">Obrázok č. 2</label><input type="file" class="form-control" id="obrazok2">
-          </div>
-        </div>
-      </form>
-    </div>
-    <button type="button" class="btn btn-success btn-xl mt-4 mb-5 rounded float-end me-5" id="pridat">Pridať knihu</button>
-  </div>
 </div>
 
 <footer class="footer pb-5 pt-5 bg-dark mt-auto">
-  <div class="container">
-    <p class="mb-0 text-muted"></p>
-  </div>
+    <div class="container">
+        <p class="mb-0 text-muted"></p>
+    </div>
 </footer>
 </body>
 </html>
