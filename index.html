@@ -31,7 +31,7 @@
                         aria-expanded="false">
                     <img src="images/sidebar.svg" width="40" height="32" alt="Menu"/>
                 </button>
-                <ul class="list-inline mx-auto justify-content-center text-center dropdown-menu">
+                <ul id="dropdown-container" class="list-inline text-center dropdown-menu">
                     <li><a class="dropdown-item" href="category.html?category=bestseller&page=1">Bestsellery</a></li>
                     <li><a class="dropdown-item" href="category.html?category=news&page=1">Novinky</a></li>
                     <li>
@@ -72,7 +72,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-right nav-right pt-2">
+        <div id="nav-right" class="text-right pt-2">
             <ul class="navbar-nav">
                 <li class="nav-item ms-2 me-2 pt-1">
                     <form role="search">
@@ -81,12 +81,12 @@
                 </li>
                 <li class="nav-item ms-2 me-2 pt-1">
                     <a href="log-in.html">
-                        <button type="button" class="btn btn-outline-dark me-2 nav-btn">Prihlásiť</button>
+                        <button id="log-in-btn" type="button" class="btn btn-outline-dark me-2 nav-btn">Prihlásiť</button>
                     </a>
                 </li>
                 <li class="nav-item ms-2 pt-1 me-2 mb-3">
                     <a href="registration.html">
-                        <button type="button" class="btn btn-warning me-2 nav-btn">Registrovať</button>
+                        <button id="registration-btn" type="button" class="btn btn-warning me-2 nav-btn">Registrovať</button>
                     </a>
                 </li>
                 <li class="nav-item ms-2 me-2 pt-2">
@@ -100,8 +100,8 @@
 </header>
 
 <div class="container">
-    <section class="container align-middle pt-3 pb-3 bg-white shadow-sm rounded mt-5">
-        <img class="img-fluid rounded" alt="Background image of books"
+    <section class="container align-middle pt-3 pb-3 bg-white shadow-sm rounded-extra mt-5">
+        <img class="img-fluid rounded-extra" alt="Background image of books"
              srcset="images/banner-420w.jpg 420w,
                      images/banner-800w.jpg 800w,
                      images/banner-1920w.jpg 1920w"
@@ -110,9 +110,9 @@
     </section>
     <div class="row">
         <aside class="col-md-3">
-            <div class="align-middle pt-3 bg-white shadow-sm rounded mt-4 d-none d-lg-block">
-                <h3 class="mb-3 ms-5">Bestsellery</h3>
-                <div class="align-middle bg-light shadow-sm rounded mb-4 ms-3 me-3">
+            <div class="align-middle pt-3 bg-white shadow-sm rounded-extra mt-4 d-none d-lg-block">
+                <h3 class="mb-3 ms-4">Bestsellery</h3>
+                <div class="align-middle bg-light shadow-sm rounded-extra mb-4 ms-3 me-3">
                     <div class="row p-3">
                         <a class="text-decoration-none text-black" href="product-detail.html ">
                             <h5 class="ms-2 mb-1"><b>Názov knihy</b></h5>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="d-flex justify-content-between bg-light">
                                 <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                <button class="mt-2 btn btn-success rounded float-end">
+                                <button class="mt-2 btn btn-success rounded-extra float-end">
                                     <img class="img-fluid d-block mx-auto" src="images/basket-light.svg" width="30"
                                          alt="Add to cart">
                                 </button>
@@ -130,7 +130,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="align-middle bg-light shadow-sm rounded mb-4 ms-3 me-3">
+                <div class="align-middle bg-light shadow-sm rounded-extra mb-4 ms-3 me-3">
                     <div class="row p-3">
                         <a class="text-decoration-none text-black" href="product-detail.html ">
                             <h5 class="ms-2 mb-1"><b>Názov knihy</b></h5>
@@ -140,7 +140,7 @@
                             </div>
                             <div class="d-flex justify-content-between bg-light">
                                 <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                <button class="mt-2 btn btn-success rounded float-end">
+                                <button class="mt-2 btn btn-success rounded-extra float-end">
                                     <img class="img-fluid d-block mx-auto" src="images/basket-light.svg" width="30"
                                          alt="Add to cart">
                                 </button>
@@ -148,7 +148,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="align-middle bg-light shadow-sm rounded mb-4 ms-3 me-3">
+                <div class="align-middle bg-light shadow-sm rounded-extra mb-4 ms-3 me-3">
                     <div class="row p-3">
                         <a class="text-decoration-none text-black" href="product-detail.html ">
                             <h5 class="ms-2 mb-1"><b>Názov knihy</b></h5>
@@ -158,7 +158,7 @@
                             </div>
                             <div class="d-flex justify-content-between bg-light">
                                 <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                <button class="mt-2 btn btn-success rounded float-end">
+                                <button class="mt-2 btn btn-success rounded-extra float-end">
                                     <img class="img-fluid d-block mx-auto" src="images/basket-light.svg" width="30"
                                          alt="Add to cart">
                                 </button>
@@ -169,294 +169,351 @@
                 <a class="text-decoration-none text-black pb-3 d-flex align-items-center justify-content-center" href="category.html?category=bestseller&page=1"><strong>Ďalšie</strong></a>
             </div>
         </aside>
-        <section class="col-lg-9">
-            <div class="align-middle pt-3 bg-white shadow-sm rounded mt-4 mb-5">
-                <div class="container">
-                    <h3 class="mb-3 ms-5 mt-3 mb-4"></h3>
-                    <h1 class="col-12 pb-3 ps-5" id="category-title">Odporúčame</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
+        <main class="col-12 col-lg-9 mb-5">
+            <article>
+                <div class="row align-middle pt-3 bg-white shadow-sm rounded-extra mt-4 mb-5">
+                    <h1 class="col-12 pb-3 ps-5 pt-3">Odporúčené</h1>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus auctor. Integer consequat dui mi, eu euismod eros condimentum
+                                                    sit amet. Donec eget porttitor tortor. Fusce ac dictum augue.
+                                                    Quisque interdum sollicitudin orci id volutpat. Proin dui risus,
+                                                    tincidunt eget cursus eu, elementum ut odio. Ut posuere in erat eu
+                                                    mattis. Maecenas suscipit mi rutrum arcu laoreet, vel sollicitudin
+                                                    mauris consequat.</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
-                                                </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus auctor. Integer consequat dui mi, eu euismod eros condimentum
+                                                    sit amet. Donec eget porttitor tortor. Fusce ac dictum augue.
+                                                    Quisque interdum sollicitudin orci id volutpat. Proin dui risus,
+                                                    tincidunt eget cursus eu, elementum ut odio. Ut posuere in erat eu
+                                                    mattis. Maecenas suscipit mi rutrum arcu laoreet, vel sollicitudin
+                                                    mauris consequat.</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
-                                                </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus au</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
-                                                </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus au</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="align-middle pt-3 bg-light shadow-sm rounded mb-4">
-                                <a class="text-decoration-none text-black" href="product-detail.html ">
-                                    <div class="p-1">
-                                        <h3 class="offset-left">Názov knihy</h3>
-                                        <p class="offset-left">Autor knihy</p>
-                                    </div>
-                                    <div class="row p-3">
-                                        <div class="d-flex container col-4 align-left text-center">
-                                            <img class="img-fluid" src="images/book_covers/book.png" alt="Book cover">
-                                        </div>
-                                        <div class="d-flex container col-8 align-right">
-                                            <div class="row">
-                                                <div class="d-flex container align-left">
-                                                    <p>Popis knihy</p>
-                                                </div>
-                                                <div class="d-flex container align-left align-items-end">
-                                                    <div class="d-flex container col-6">
-                                                        <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
-                                                    </div>
-                                                    <div class="d-flex container col-6 d-flex flex-row-reverse">
-                                                        <button class="btn btn-success rounded">
-                                                            <img class="img-fluid d-block mx-auto"
-                                                                 src="images/basket-light.svg" width="30"
-                                                                 alt="Add to cart">
-                                                        </button>
-                                                    </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus au</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus au</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus au</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 p-2">
+                        <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
+                            <a class="text-decoration-none text-black" href="product-detail.html ">
+                                <section class="p-1">
+                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
+                                        ktorýbymoholrobiťtrochuproblémy</h3>
+                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
+                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                </section>
+                                <section class="row p-3">
+                                    <section class="d-flex container col-4 align-left text-center">
+                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                             alt="Book cover">
+                                    </section>
+                                    <section class="d-flex container col-8 align-right">
+                                        <div class="row">
+                                            <section class="d-flex container align-left">
+                                                <!-- Lipsum source: https://www.lipsum.com/ -->
+                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
+                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
+                                                    lectus au</p>
+                                            </section>
+                                            <div class="d-flex container align-left align-items-end">
+                                                <div class="d-flex container col-6">
+                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                </div>
+                                                <div class="d-flex container col-6 d-flex flex-row-reverse">
+                                                    <button class="btn btn-success rounded-extra">
+                                                        <img class="img-fluid d-block mx-auto"
+                                                             src="images/basket-light.svg" width="30"
+                                                             alt="Add to cart">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </a>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </section>
+            </article>
+        </main>
     </div>
 </div>
 <footer class="footer pb-5 pt-5 bg-dark mt-auto">

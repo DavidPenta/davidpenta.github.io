@@ -1,21 +1,62 @@
 body {
-    background-color: #fce6a1 !important;
+    background-color: #fce6a1;
 }
 
 .btn-warning:hover {
     color: #000000;
-    background-color: #d9a302 !important;
-    border-color: #d9a302 !important;
+    background-color: #d9a302;
+    border-color: #d9a302;
 }
 
-.rounded {
-    border-radius: 2rem !important;
+.rounded-extra {
+    border-radius: 40px;
 }
 
 .btn-xl {
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 10px;
+}
+
+.dropdown {
+    position: static;
+}
+
+.dropdown-btn {
+    background-color: #fafafa;
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+.dropdown:active {
+    color: #000000;
+}
+
+#dropdown-container {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    margin-top: -1px;
+    border-radius: 0;
+    width: 100%;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+    background-color:  #fef3d2;
+}
+
+@media only screen and (max-width: 650px) {
+    #container-expanding {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #log-in-btn {
+        width: 100%;
+    }
+    #registration-btn {
+        width: 100%;
+    }
+    #nav-right {
+        width: 100%;
+    }
 }
 
 #book-image {
@@ -36,40 +77,4 @@ body {
     display: inline-block;
     text-align: right;
     width: 100%;
-}
-
-.dropdown {
-    position: static !important;
-}
-
-.dropdown-btn {
-    background-color: #fafafa;
-    color: #fafafa;
-    border-color: #fafafa;
-}
-
-.dropdown:active {
-    color: #000000;
-}
-
-.dropdown-menu {
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
-    margin-top: -2px !important;
-    width: 100%;
-}
-
-@media only screen and (max-width: 650px) {
-    .container-expanding {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .nav-btn {
-        width: 100% !important;
-    }
-
-    .nav-right {
-        width: 100%;
-    }
 }

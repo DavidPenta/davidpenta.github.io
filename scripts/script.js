@@ -11,7 +11,7 @@ const categoryTitleMapping =
         "romance": "Romantika",
         "crime": "Krimi a detektívky",
         "thriller": "Trilery",
-        "adventure": "Dobrodružne",
+        "adventure": "Dobrodružné",
         "family": "Rodina",
         "fantasy": "Fantasy",
         "scifi": "Sci-fi",
