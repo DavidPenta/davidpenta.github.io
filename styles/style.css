@@ -82,8 +82,12 @@ body {
 /* Zdroj: https://css-tricks.com/line-clampin/ */
 .line-clamp {
     display: -webkit-box;
-    word-wrap: break-all;
+    word-wrap: break-word;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.book-description{
+    height: 14ex;
 }
