@@ -29,7 +29,7 @@ function setCategoryTitle(categoryName) {
 }
 
 function setCategoryPage(pageNumber, categoryName) {
-    const maxPage = 20;
+    const maxPage = 5;
     let pageAnchorElement;
     for (let i = 0; i < 5; i++) {
         let pageNumberPosition = i - 2;

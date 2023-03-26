@@ -141,17 +141,19 @@
             <article class="align-middle p-3 p-lg-5 bg-white shadow-sm rounded-extra mt-4">
                 <h3 class="col-12 pb-3 ps-4">Filtrovať produkty:</h3>
                 <h4 class="col-12 mt-4">Cena:</h4>
-                <section class="col-lg-12 col-sm-6 col-xs-12 text-center text-md-start">
-                    <label for="min_price"><h6 class="mt-3">Minimálna cena:</h6></label>
-                    <input class="form-control" id="min_price" type="number" min="0" max="10000" step="1" value="0">
-                </section>
-                <section class="col-lg-12 col-sm-6 col-xs-12 text-center text-md-start">
-                    <label for="max_price"><h6 class="mt-3">Maximálna cena:</h6></label>
-                    <input class="form-control" id="max_price" type="number" min="0" max="10000" step="1"
-                           value="10">
-                </section>
-
+                <div class="row">
+                    <section class="col-lg-12 col-sm-6 col-xs-12 text-center text-md-start">
+                        <label for="min_price"><h6 class="mt-3">Minimálna cena:</h6></label>
+                        <input class="form-control" id="min_price" type="number" min="0" max="10000" step="1" value="0">
+                    </section>
+                    <section class="col-lg-12 col-sm-6 col-xs-12 text-center text-md-start">
+                        <label for="max_price"><h6 class="mt-3">Maximálna cena:</h6></label>
+                        <input class="form-control" id="max_price" type="number" min="0" max="10000" step="1"
+                               value="10">
+                    </section>
+                </div>
                 <h4 class="col-12 mt-4">Počet strán:</h4>
+                <div class="row">
                 <section class="col-lg-12 col-sm-6 col-xs-12 text-center text-md-start">
                     <label for="min_pages"><h6 class="mt-3">Minimálny počet strán:</h6></label>
                     <input class="form-control" id="min_pages" type="number" min="0" max="10000" step="1" value="1">
@@ -161,6 +163,7 @@
                     <input class="form-control" id="max_pages" type="number" min="0" max="10000" step="1"
                            value="500">
                 </section>
+                </div>
                 <label for="language" class="col-12 mt-4 h4">Jazyk:</label>
                 <section class="col-12 text-center text-md-start">
                     <select name="language" id="language" class="form-select">
@@ -184,10 +187,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Názov knihy" class="offset-left text-wrap text-break">
+                                        Názov knihy
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Meno autora" class="offset-left text-wrap text-break">
+                                        Meno autora
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -196,20 +201,14 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                                                    sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede
-                                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                                                    justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                                                    dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                                                    dapibu...</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Veľmi krátky popis knihy.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -229,10 +228,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -241,20 +242,20 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                                                    sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede
-                                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                                                    justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                                                    dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                                                    dapibu...</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur ac neque sit amet enim porttitor pulvinar nec eu metus.
+                                                    Quisque purus velit, faucibus eu luctus vel, commodo ut justo. Integer eget volutpat dui.
+                                                    Sed sit amet orci tincidunt, ultrices ipsum a, lobortis massa.
+                                                    Duis consequat sapien a dolor dapibus, sit amet scelerisque neque tincidunt.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Fusce consequat fermentum nisi, quis molestie lorem facilisis eget. Maecenas interdum sit.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -274,10 +275,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Názov knihy" class="offset-left text-wrap text-break">
+                                        Názov knihy
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Meno autora" class="offset-left text-wrap text-break">
+                                        Meno autora
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -286,20 +289,14 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                                                    sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede
-                                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                                                    justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                                                    dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                                                    dapibu...</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Veľmi krátky popis knihy.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -319,10 +316,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Názov knihy" class="offset-left text-wrap text-break">
+                                        Názov knihy
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Meno autora" class="offset-left text-wrap text-break">
+                                        Meno autora
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -331,20 +330,14 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetuer
-                                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                                                    sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede
-                                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                                                    justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                                                    dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                                                    dapibu...</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Veľmi krátky popis knihy.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -364,10 +357,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -376,15 +371,20 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
-                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
-                                                    lectus au</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur ac neque sit amet enim porttitor pulvinar nec eu metus.
+                                                    Quisque purus velit, faucibus eu luctus vel, commodo ut justo. Integer eget volutpat dui.
+                                                    Sed sit amet orci tincidunt, ultrices ipsum a, lobortis massa.
+                                                    Duis consequat sapien a dolor dapibus, sit amet scelerisque neque tincidunt.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Fusce consequat fermentum nisi, quis molestie lorem facilisis eget. Maecenas interdum sit.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -404,10 +404,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -416,15 +418,20 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
-                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
-                                                    lectus au</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur ac neque sit amet enim porttitor pulvinar nec eu metus.
+                                                    Quisque purus velit, faucibus eu luctus vel, commodo ut justo. Integer eget volutpat dui.
+                                                    Sed sit amet orci tincidunt, ultrices ipsum a, lobortis massa.
+                                                    Duis consequat sapien a dolor dapibus, sit amet scelerisque neque tincidunt.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Fusce consequat fermentum nisi, quis molestie lorem facilisis eget. Maecenas interdum sit.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -444,10 +451,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -456,15 +465,20 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
-                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
-                                                    lectus au</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur ac neque sit amet enim porttitor pulvinar nec eu metus.
+                                                    Quisque purus velit, faucibus eu luctus vel, commodo ut justo. Integer eget volutpat dui.
+                                                    Sed sit amet orci tincidunt, ultrices ipsum a, lobortis massa.
+                                                    Duis consequat sapien a dolor dapibus, sit amet scelerisque neque tincidunt.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Fusce consequat fermentum nisi, quis molestie lorem facilisis eget. Maecenas interdum sit.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
@@ -484,10 +498,12 @@
                         <article class="bg-light shadow-sm rounded-extra p-2 ms-2 me-2">
                             <a class="text-decoration-none text-black" href="product-detail.html ">
                                 <section class="p-1">
-                                    <h3 class="offset-left text-wrap text-break">Dobrá kniha s veľmi dlhým názvom
-                                        ktorýbymoholrobiťtrochuproblémy</h3>
-                                    <h4 class="offset-left text-wrap text-break">Dobrý autor s veľmi dlhým menom
-                                        ktorébymohlorobiťtrochuproblémy</h4>
+                                    <h3 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h3>
+                                    <h4 data-bs-toggle="tooltip" title="Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger" class="offset-left text-truncate">
+                                        Lorem ipsum dolor sit amet, consecteturadipiscingelitinteger.
+                                    </h4>
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
@@ -496,15 +512,20 @@
                                     </section>
                                     <section class="d-flex container col-8 align-right">
                                         <div class="row">
-                                            <section class="d-flex container align-left">
-                                                <p class="text-wrap text-break">Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit. Aenean placerat aliquet neque, id aliquam eros
-                                                    lobortis eget. Sed imperdiet lorem vel eros interdum, vel elementum
-                                                    lectus au</p>
+                                            <section class="d-flex container align-left book-description">
+                                                <p class="text-wrap text-break line-clamp">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur ac neque sit amet enim porttitor pulvinar nec eu metus.
+                                                    Quisque purus velit, faucibus eu luctus vel, commodo ut justo. Integer eget volutpat dui.
+                                                    Sed sit amet orci tincidunt, ultrices ipsum a, lobortis massa.
+                                                    Duis consequat sapien a dolor dapibus, sit amet scelerisque neque tincidunt.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Fusce consequat fermentum nisi, quis molestie lorem facilisis eget. Maecenas interdum sit.
+                                                </p>
                                             </section>
                                             <div class="d-flex container align-left align-items-end">
                                                 <div class="d-flex container col-6">
-                                                    <span class="fs-4 ms-2 mt-3 text-black"><b>13,25€</b></span>
+                                                    <span class="fs-4 mt-3 text-black"><b>13,25€</b></span>
                                                 </div>
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
