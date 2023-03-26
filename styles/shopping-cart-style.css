@@ -1,9 +1,7 @@
 @import "style.css";
-@import "order_style.css";
 
 .book-overflow {
     display: -webkit-box;
-    max-width: auto;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -15,5 +13,5 @@
 }
 
 .book-cover {
-    max-height: 140px;    
+    max-height: 140px;
 }

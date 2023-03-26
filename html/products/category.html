@@ -12,15 +12,15 @@
     <meta name="author" content="Ľubomír Novotný"/>
     <meta name="keywords"
           content="Kníhkupectvo Knihomoľ, Kníhkupectvo, Knihy, Online kníhkupectvo, Knižný obchod na internete, Predaj kníh online, Kúpiť knihu, Slovenské knihy, Bestsellery, Učebnice, Literatúra, Beletria"/>
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg"/>
+    <link rel="icon" type="image/png" href="/images/favicon/favicon.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="../../styles/category-style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="../../scripts/script.js"></script>
 </head>
 <body onload="setCategoryTitleAndPage()" class="d-flex flex-column min-vh-100">
 <header class="navbar navbar-expand-md bg-light p-3 w-100">
@@ -29,7 +29,7 @@
             <nav class="d-flex dropdown">
                 <button class="btn dropdown-btn me-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                    <img src="images/sidebar.svg" width="40" height="32" alt="Menu"/>
+                    <img src="../../images/sidebar.svg" width="40" height="32" alt="Menu"/>
                 </button>
                 <ul id="dropdown-container" class="list-inline text-center dropdown-menu">
                     <li><a class="dropdown-item" href="category.html?category=bestseller&page=1">Bestsellery</a></li>
@@ -58,11 +58,11 @@
                 <ul class="navbar-nav">
                     <li>
                         <div class="text-lg-right text-center">
-                            <a href="index.html" class="text-black text-decoration-none">
-                                <img class="d-none d-lg-block" src="images/logo-large.svg" width="330" height="48"
+                            <a href="../../index.html" class="text-black text-decoration-none">
+                                <img class="d-none d-lg-block" src="../../images/logo/logo-large.svg" width="330" height="48"
                                      alt="Kníhkupectvo Knihomoľ"/>
                                 <div class="text-center">
-                                    <img class="d-lg-none" src="images/logo-small.svg" width="165" height="48"
+                                    <img class="d-lg-none" src="../../images/logo/logo-small.svg" width="165" height="48"
                                          alt="Kníhkupectvo Knihomoľ"/>
                                 </div>
 
@@ -80,21 +80,21 @@
                                placeholder="Hľadať podľa názvu, autora..." aria-label="Search"></form>
                 </li>
                 <li class="nav-item ms-2 me-2 pt-1">
-                    <a href="log-in.html">
+                    <a href="../user-auth/log-in.html">
                         <button id="log-in-btn" type="button" class="btn btn-outline-dark me-2 nav-btn">Prihlásiť
                         </button>
                     </a>
                 </li>
                 <li class="nav-item ms-2 pt-1 me-2 mb-3">
-                    <a href="registration.html">
+                    <a href="../user-auth/registration.html">
                         <button id="registration-btn" type="button" class="btn btn-warning me-2 nav-btn">Registrovať
                         </button>
                     </a>
                 </li>
                 <li class="nav-item ms-2 me-2 pt-2">
-                    <a href="shopping-cart.html"
+                    <a href="../order/shopping-cart.html"
                        class="d-flex text-black text-decoration-none mb-2 justify-content-center mb-md-0"><img
-                            src="images/basket.svg" class="bi me-2" width="40" height="32" alt="Go to cart"/></a>
+                            src="../../images/basket/basket.svg" class="bi me-2" width="40" height="32" alt="Go to cart"/></a>
                 </li>
             </ul>
         </div>
@@ -103,10 +103,10 @@
 <div class="container">
     <section class="container align-middle pt-3 pb-3 bg-white shadow-sm rounded-extra mt-5">
         <img class="img-fluid rounded-extra" alt="Background image of books"
-             srcset="images/banner-420w.jpg 420w,
-                     images/banner-800w.jpg 800w,
-                     images/banner-1920w.jpg 1920w"
-             src="images/banner-1920w.jpg"
+             srcset="/images/banner/banner-420w.jpg 420w,
+                     /images/banner/banner-800w.jpg 800w,
+                     /images/banner/banner-1920w.jpg 1920w"
+             src="/images/banner/banner-1920w.jpg"
         />
     </section>
 
@@ -196,7 +196,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -213,7 +213,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -237,7 +237,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -260,7 +260,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -284,7 +284,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -301,7 +301,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -325,7 +325,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -342,7 +342,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -366,7 +366,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -389,7 +389,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -413,7 +413,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -436,7 +436,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -460,7 +460,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -483,7 +483,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
@@ -507,7 +507,7 @@
                                 </section>
                                 <section class="row p-3">
                                     <section class="d-flex container col-4 align-left text-center">
-                                        <img class="img-fluid mb-auto" src="images/book_covers/book.png"
+                                        <img class="img-fluid mb-auto" src="../../images/book_covers/book.png"
                                              alt="Book cover">
                                     </section>
                                     <section class="d-flex container col-8 align-right">
@@ -530,7 +530,7 @@
                                                 <div class="d-flex container col-6 d-flex flex-row-reverse">
                                                     <button class="btn btn-success rounded-extra">
                                                         <img class="img-fluid d-block mx-auto"
-                                                             src="images/basket-light.svg" width="30"
+                                                             src="../../images/basket/basket-light.svg" width="30"
                                                              alt="Add to cart">
                                                     </button>
                                                 </div>
