@@ -44,15 +44,6 @@ body {
     background-color:  #fef3d2;
 }
 
-#container-expanding{
-    width: 50%;
-}
-
-@media only screen and (max-width: 650px) {
-    #container-expanding{
-        width: 100%;
-    }
-}
 @media only screen and (max-width: 800px) {
     #log-in-btn {
         width: 100%;
@@ -64,7 +55,7 @@ body {
         width: 100%;
     }
 }
-
+/* large buttons */
 .btn-xxl {
     padding: 15px 30px;
     font-size: 20px;
