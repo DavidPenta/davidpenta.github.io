@@ -98,38 +98,91 @@
         </div>
     </div>
 </header>
-<div class="container">
-    <div class="container align-middle pt-5 pb-5 bg-white shadow-sm rounded-extra mt-5 mb-5">
-        <div class="row">
-            <div class="d-flex container col-12 col-md-6 align-center align-md-left text-center p-3 ratio-3-4">
-                <img id="book-image-large" class="img-fluid d-block mx-auto" src="images/book_covers/book.png"
-                     alt="Book cover">
+<div class="container mb-5">
+    <div class="container align-middle">
+        <div class="container align-middle pt-4 bg-white shadow-sm rounded-extra mt-5 mb-3 pb-3">
+            <h3 class="text-center pb-3">Nákupný košík</h3>
+
+            <div class="row bg-light rounded-extra m-2 p-2">
+                <div class="col-3 col-xl-1 col-md-2 d-flex flex-wrap align-items-center m-0">
+                    <img src="images/book_covers/princ.jpg" class="img-fluid" alt="Book cover">
+                </div>
+                <div class="col-5 col-xl-7 col-md-6">
+                    <h4>Malý princ</h4>
+                    <h6>Antoine de Saint-Exupéry</h6>
+                    <label for="amountInput-1">Počet </label><input type="number" min="1" step="1" class="form-control"
+                                                                    id="amountInput-1" placeholder="1"
+                                                                    style="width: 65px;">
+                </div>
+                <div class="col float-end d-flex align-items-center text-end justify-content-end">
+                    <div class="col-1 mt-2 me-2">
+                        <h5>5€</h5>
+                    </div>
+                    <div class="col-1 pb-1 ms-2">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
             </div>
-            <div class="container col-12 col-md-6 mb-5 align-right text-center text-md-start">
-                <h1 class="pt-2">Názov knihy</h1>
-                <h3 class="pt-2">Autor knihy</h3>
-                <h6 class="pt-2">Vydavateľstvo</h6>
-                <h6 class="pt-2">257 strán</h6>
-                <h6 class="pt-5">Popis knihy</h6>
-                <h1 class="pt-5 text-primary">13,25€</h1>
+
+            <div class="row bg-light rounded-extra m-2 p-2">
+                <div class="col-3 col-xl-1 col-md-2 d-flex flex-wrap align-items-center m-0">
+                    <img src="images/book_covers/princ.jpg" class="img-fluid" alt="Book cover">
+                </div>
+                <div class="col-5 col-xl-7 col-md-6">
+                    <h4>Malý princ</h4>
+                    <h6>Antoine de Saint-Exupéry</h6>
+                    <label for="amountInput-2">Počet </label><input type="number" min="1" step="1" class="form-control"
+                                                                    id="amountInput-2" placeholder="1"
+                                                                    style="width: 65px;">
+                </div>
+                <div class="col float-end d-flex align-items-center text-end justify-content-end">
+                    <div class="col-1 mt-2 me-2">
+                        <h5>5€</h5>
+                    </div>
+                    <div class="col-1 pb-1 ms-2">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-light rounded-extra m-2 p-2">
+                <div class="col-3 col-xl-1 col-md-2 d-flex flex-wrap align-items-center m-0">
+                    <img src="images/book_covers/princ.jpg" class="img-fluid" alt="Book cover">
+                </div>
+                <div class="col-5 col-xl-7 col-md-6">
+                    <h4>Malý princ</h4>
+                    <h6>Antoine de Saint-Exupéry</h6>
+                    <label for="amountInput-3">Počet </label><input type="number" min="1" step="1" class="form-control"
+                                                                    id="amountInput-3" placeholder="1"
+                                                                    style="width: 65px;">
+                </div>
+                <div class="col float-end d-flex align-items-center text-end justify-content-end">
+                    <div class="col-1 mt-2 me-2">
+                        <h5>5€</h5>
+                    </div>
+                    <div class="col-1 pb-1 ms-2">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-2 mt-4">
+                <h3 class="text-end">Celková suma : 23,99€</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="container col-12 col-md-6 align-left text-center">
-                <button type="button" class="btn btn-outline-danger btn-xl rounded-extra align-middle mt-md-5">
-                    <img src="images/heart.svg" width="32" alt="Add to favorites">
-                    <span class="ms-2 align-middle">Pridať medzi obľúbené</span>
-                </button>
+        <div class="d-grid gap-2 d-md-block">
+            <div class="d-flex justify-content-center justify-content-md-start mt-1 ms-4 me-4 float-start">
+                <a href="index.html" class="btn btn-outline-success btn-xl rounded-extra text-nowrap" role="button"
+                   style="width: 250px;">Pokračovať v nákupe</a>
             </div>
-            <div class="container col-12 col-md-6 align-right text-center">
-                <button type="button" class="btn btn-success btn-xl rounded-extra mt-5 align-middle">
-                    <img src="images/basket-light.svg" width="32" alt="Go to cart">
-                    <span class="ms-2 align-middle">Vložiť do košíka</span>
-                </button>
+            <div class="d-flex justify-content-center justify-content-md-end mt-1 ms-4 me-4 float-end">
+                <a href="order.html" class="btn btn-success btn-xl rounded-extra text-nowrap" role="button"
+                   style="width: 250px;">Objednať</a>
             </div>
         </div>
     </div>
 </div>
+
 <footer class="footer pb-5 pt-5 bg-dark mt-auto">
     <div class="container">
         <div class="row">
