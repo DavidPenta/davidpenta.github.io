@@ -40,21 +40,25 @@ body {
     border-radius: 0;
     width: 100%;
 }
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
-    background-color:  #fef3d2;
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-color: #fef3d2;
 }
 
 @media only screen and (max-width: 800px) {
     #log-in-btn {
         width: 100%;
     }
+
     #registration-btn {
         width: 100%;
     }
+
     #nav-right {
         width: 100%;
     }
 }
+
 /* large buttons */
 .btn-xxl {
     padding: 15px 30px;
