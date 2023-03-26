@@ -104,29 +104,40 @@
             <h3 class="text-center">Dodacie údaje</h3>
             <form class="row g-3 m-2">
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="name">Meno</label><input id=name type="text" class="form-control">
+                    <label class="ps-3" for="name">Meno</label>
+                    <input id=name type="text" class="form-control" maxlength="64">
                 </div>
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="surname">Priezvisko</label><input id="surname" type="text"
-                                                                               class="form-control">
+                    <label class="ps-3" for="surname">Priezvisko</label>
+                    <input id="surname" type="text" class="form-control" maxlength="64">
                 </div>
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="email">Email</label><input id=email type="text" class="form-control">
+                    <label class="ps-3" for="email">Email</label>
+                    <input id=email type="text" class="form-control" maxlength="254">
                 </div>
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="phone">Telefónne číslo</label><input id="phone" type="text"
-                                                                                  class="form-control">
+                    <label class="ps-3" for="phone">Telefónne číslo</label>
+                    <input id="phone" type="text" class="form-control" maxlength="15">
                 </div>
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="street">Ulica a číslo</label><input id="street" type="text"
-                                                                                 class="form-control">
+                    <div class="row">
+                        <div class="col-9 pe-0">
+                            <label class="ps-3" for="street">Ulica</label>
+                            <input id="street" type="text" class="form-control" maxlength="128">
+                        </div>
+                        <div class="col-3">
+                            <label class="ps-3" for="street-number">Číslo</label>
+                            <input id="street-number" type="text" class="form-control" maxlength="16">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="city">Mesto</label><input id=city type="text" class="form-control">
+                    <label class="ps-3" for="city">Mesto</label>
+                    <input id=city type="text" class="form-control" maxlength="128">
                 </div>
                 <div class="col-12 col-md-6">
-                    <label class="ps-3" for="postcode">PSČ</label><input id="postcode" type="text"
-                                                                         class="form-control pe-5">
+                    <label class="ps-3" for="postcode">PSČ</label>
+                    <input id="postcode" type="text" class="form-control pe-5" maxlength="10">
                 </div>
                 <div class="row mt-5 mb-5 ms-3">
                     <div class="col-md-6 col-12 mb-4 col-md-0">
