@@ -78,3 +78,28 @@ body {
     text-align: right;
     width: 100%;
 }
+
+/* shopping cart */
+.book-overflow {
+    display: -webkit-box;
+    max-width: auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* shopping cart aj order */
+.btn-250 {
+    width: 250px;
+}
+
+/* shopping cart */
+.amount-input {
+    width: 65px;
+}
+
+/* shopping cart */
+.book-cover {
+    max-height: 140px;    
+}
